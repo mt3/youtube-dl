@@ -1,0 +1,76 @@
+h1. Usage
+
+<code>youtube-dl [options] url...</code>
+
+
+
+h1. Options
+
+<code>  -h, --help            print this help text and exit</code>
+<code>  -v, --version         print program version and exit</code>
+<code>  -U, --update          update this program to latest stable version</code>
+<code>  -i, --ignore-errors   continue on download errors</code>
+<code>  -r LIMIT, --rate-limit=LIMIT
+                        download rate limit (e.g. 50k or 44.6m)</code>
+<code>  -R RETRIES, --retries=RETRIES
+                        number of retries (default is 10)</code>
+<code>  --playlist-start=NUMBER
+                        playlist video to start at (default is 1)</code>
+<code>  --playlist-end=NUMBER
+                        playlist video to end at (default is last)</code>
+<code>  --dump-user-agent     display the current browser identification</code>
+
+
+h2. Authentication Options
+
+<code>    -u USERNAME, --username=USERNAME
+                        account username</code>
+<code>    -p PASSWORD, --password=PASSWORD
+                        account password</code>
+<code>    -n, --netrc         use .netrc authentication data</code>
+
+
+h2. Video Format Options
+
+<code>    -f FORMAT, --format=FORMAT
+                        video format code</code>
+<code>    --all-formats       download all available video formats</code>
+<code>    --max-quality=FORMAT
+                        highest quality format to download</code>
+
+h2. Verbosity / Simulation Options
+
+<code>    -q, --quiet         activates quiet mode</code>
+<code>    -s, --simulate      do not download video</code>
+<code>    -g, --get-url       simulate, quiet but print URL</code>
+<code>    -e, --get-title     simulate, quiet but print title</code>
+<code>    --get-thumbnail     simulate, quiet but print thumbnail URL</code>
+<code>    --get-description   simulate, quiet but print video description</code>
+<code>    --get-filename      simulate, quiet but print output filename</code>
+<code>    --no-progress       do not print progress bar</code>
+<code>    --console-title     display progress in console titlebar</code>
+
+h2. Filesystem Options
+
+<code>    -t, --title         use title in file name</code>
+<code>    -l, --literal       use literal title in file name</code>
+<code>    -A, --auto-number   number downloaded files starting from 00000</code>
+<code>    -o TEMPLATE, --output=TEMPLATE
+                        output filename template</code>
+<code>    -a FILE, --batch-file=FILE
+                        file containing URLs to download ('-' for stdin)</code>
+<code>    -w, --no-overwrites
+                        do not overwrite files</code>
+<code>    -c, --continue      resume partially downloaded files</code>
+<code>    --cookies=FILE      file to dump cookie jar to</code>
+<code>    --no-part           do not use .part files</code>
+<code>    --no-mtime          do not use the Last-modified header to set the file
+                        modification time</code>
+
+h2. Post-processing Options
+
+<code>    --extract-audio     convert video files to audio-only files (requires
+                        ffmpeg and ffprobe)</code>
+<code>    --audio-format=FORMAT
+                        "best", "aac" or "mp3"; best by default</code>
+
